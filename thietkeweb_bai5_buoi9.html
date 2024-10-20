@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+<style>
+    .slide {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+    <div class="slide fade">
+        <img src="https://images2.thanhnien.vn/zoom/736_460/528068263637045248/2023/10/17/minecraft-16789786596172117060425-0-0-469-750-crop-169755378361062234778.jpg" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="https://cdn2.fptshop.com.vn/unsafe/640x0/filters:quality(100)/2023_4_10_638167187058768564_moi-tai-ve-bo-suu-tap-hinh-nen-minecraft-dep-lung-linh-danh-cho-may-tinh.jpg" style="width:100%">
+    </div>
+
+    <div class="slide fade">
+        <img src="https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/156732/Originals/Minecraft%20(1).png" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<script src="b5_buoi9.js"></script>
+
+</body>
+</html>
